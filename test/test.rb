@@ -1,13 +1,13 @@
-def text
-  <<~TEST
-  ヒアドキュメント
-  <<~によりインデント可能
-  TEST
-end
+a = [1, 2, 3, 1, 2, 3]
+b = [3, 4, 5]
 
-puts text
+p a & b
 
-require 'date'
-a = Date.today
+a = []
+b = [2, 3]
 
-puts a
+
+a.push(1)
+a.push(*b)
+
+p a
