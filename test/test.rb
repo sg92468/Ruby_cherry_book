@@ -1,13 +1,8 @@
-a = [1, 2, 3, 1, 2, 3]
-b = [3, 4, 5]
+a = 'Ruby,Java,Perl,PHP'
 
-p a & b
+p a.chars
+p a.split(',')
 
-a = []
-b = [2, 3]
+b = a.split(',')
 
-
-a.push(1)
-a.push(*b)
-
-p a
+puts b
