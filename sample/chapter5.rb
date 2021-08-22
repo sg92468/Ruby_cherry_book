@@ -7,3 +7,8 @@ currentries.each do |key_value|
   puts "#{key} : #{value}"
   puts "#{key_value}"
 end
+
+limit = nil
+limit ||= 10
+
+p limit
