@@ -15,3 +15,20 @@ module Clock
 end
 
 p Clock::Second.new(13)
+
+class Product
+  def name
+    "A great film"
+  end
+end
+
+module NameDecorator
+  def name
+    "<<#{super}>>"
+  end
+end
+
+Product.prepend NameDecorator
+
+product = Product.new
+p product.name
